@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Light bending simulator</title>
+      <link rel = "stylesheet" href = "index.css">
+      <script src="js/gsap.min.js"></script>
+      <script src="js/Draggable.min.js"></script>
+   </head>
+   <body>
+      <div class="top"></div>
+      <div class="above">
+         <div class = "mylaser">
+            <div class="laser">
+               <div class="toggle_btn"></div>
+               <div class="door"></div>
+            </div>
+            <div class="beam"></div>
+         </div>
+         <div class="aboveReflection">
+            <div class="topRef"></div>
+            <select name="medium1" value="Air">
+               <option>Air</option>
+               <option>Water</option>
+               <option>Glass</option>
+            </select>
+            <span class = "index">(n = 1.00)</span>
+         </div>
+      </div>
+      <div class="lineX"></div>
+      <div class="lineY"></div>
+      <div class="bottomReflection">
+         <div class="bottomRef"></div>
+         <select name="medium2" value="Water">
+            <option>Water</option>
+            <option>Air</option>
+            <option>Glass</option>
+         </select>
+         <span class = "index">(n = 1.33)</span>
+      </div>
+      <div class="protroctor"></div>
+      <div class="bottom">
+         <div class="showNormal">
+            <label class="switch"><input type = "checkbox" id = "check1" value="normal" checked><span class="slider round"></label>
+            <span class = "title">Normal</title>
+         </div>
+         <div class="showProtoctor">
+            <label class="switch"><input type = "checkbox" id = "check2" value="normal"><span class="slider round"></label>
+            <span class = "title">Protractor</title>
+         </div>
+      </div>
+      <script src = "js/index.js"></script>
+   </body>
+</html>

@@ -1,0 +1,300 @@
+body{
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.aboveReflection select{
+	position: absolute;
+	bottom: 10px;
+	right: 90px;
+	z-index: 999;
+	width: 100px;
+	text-align-last: center;
+	outline: none;
+	padding: 5px 15px;
+	background: transparent;
+	font: 500 20px Segoe UI;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+	-webkit-appearance: none;
+}
+.bottomReflection select{
+	position: absolute;
+	top: 6.5px;
+	right: 90px;
+	z-index: 999;
+	width: 100px;
+	text-align-last: center;
+	outline: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	border: none;
+	background: transparent;
+	font: 500 20px Segoe UI;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+.index{
+	z-index: 999;
+	font: normal 20px Segoe UI;
+	right: 20px;
+	cursor: default;
+}
+.aboveReflection .index{
+	position: absolute;
+	bottom: 15px;
+}
+.bottomReflection .index{
+	position: absolute;
+	top: 12px;
+}
+.top{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	height: 50%;
+}
+.mylaser{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50%;
+	height: 50%;
+	z-index: 100;
+}
+.aboveReflection{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 50%;
+	height: 50%;
+	z-index: 99;
+}
+.bottomReflection{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 50%;
+	height: 50%;
+	z-index: 990;
+}
+.laser{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 120px;
+  height: 50px;
+  position: fixed;
+  top: 24.73vh; right: 28.3vh;
+  background-color: #2f4353;
+  background-image: linear-gradient(0deg, #2f4353 0%, #d2ccc4 74%);
+  border-radius: 10px;
+  border: 1px solid;
+  transform: rotate(30deg);
+  text-align: center;
+  cursor: move;
+}
+.laser .toggle_btn{
+  font: bold 12px Segoe UI;
+  color: #fefefe;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 15px;
+  background: #cb2d3e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-right: 15px;
+  color: #474545;
+}
+.laser .toggled{
+  background: #ED213A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mylaser .door{
+	margin-top: -30px;
+	margin-right: -17px;
+	width: 15px;
+	height: 30px;
+	border: 1px solid;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-left: 0px;
+	background-color: #2f4353;
+	background-image: linear-gradient(0deg, #2f4353 0%, #d2ccc4 74%);
+}
+.mylaser .beam{
+	display: none;
+	position: absolute;
+	top: 100%; right: -5.48px;
+	transform: rotate(121.1deg);
+	width: 3px;
+	height: 32.5vh;
+	z-index: 999;
+	background: red;
+	box-shadow: 0 0 3px red;
+	border-bottom-left-radius: 50px;	
+	border-bottom-right-radius: 50px;
+	transform-origin: top left;
+}
+.aboveReflection .topRef{
+	display: none;
+	position: absolute;
+	bottom: -2px; left: -3px;
+	transform: rotate(60deg);
+	width: 3px;
+	height: 100vh;
+	z-index: 990;
+	background: red;
+	box-shadow: 0 0 3px red;
+	border-bottom-left-radius: 50px;	
+	border-bottom-right-radius: 50px;
+	opacity: 0.2;
+	transform-origin: bottom right;
+}
+.bottomReflection .bottomRef{
+	display: none;
+	position: absolute;
+	top: -1px; left: -2px;
+	transform: rotate(-40deg);
+	width: 3px;
+	height: 100vh;
+	background: red;
+	box-shadow: 0 0 3px red;
+	border-bottom-left-radius: 50px;	
+	border-bottom-right-radius: 50px;
+	transform-origin: top right;
+}
+
+.lineX{
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 3px;
+  background: gray;
+  z-index: 10;
+}
+.lineY{
+  position: absolute;
+  top: 51.5%; left: 50%;
+  transform: translate(-51.5%, -50%);
+  width: .1px;
+  height: 400px;
+  border: 2px dashed;
+  color: gray;
+  z-index: 10;
+}
+.bottom label, input{
+	cursor: pointer;
+}
+.bottom .showNormal{
+	position: absolute;
+	bottom: 20px; left: 20px;
+	font: normal 22px Segoe UI;
+	padding-right: 15px;
+	z-index: 999;
+}
+.bottom .title{
+	margin-left: 5px;
+	cursor: pointer;
+	font: 500 20px Segoe UI;
+}
+.bottom .showProtoctor{
+	position: absolute;
+	bottom: 80px; left: 20px;
+	font: normal 22px Segoe UI;
+	z-index: 999;
+}
+.protroctor{
+	display: none;
+	position: absolute;
+	top: 49.6%; left: 49.88%;
+	transform: translate(-49.6%, -50%);
+	background: url('img/protroctor.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 300px;
+	cursor: pointer;
+	z-index: 999;
+	opacity: 0.8;
+}
+.protroctor:hover{
+	opacity: 1;
+}
+.bottom{
+  background: #9ec4f1;
+  position: absolute;
+  left: 0px; right: 0px;
+  bottom: 0px;
+  height: 50%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
