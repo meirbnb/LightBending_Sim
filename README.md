@@ -7,9 +7,9 @@ Physics Light Bending Simulator
 
 [Check demo](https://meirbnb.github.io/LightBending_Sim/)
 
-<img src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/TIR-quinine.jpg" data-canonical-src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/TIR-quinine.jpg" width="450" height="310" />
+<img src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/TIR-quinine.jpg" data-canonical-src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/TIR-quinine.jpg" width="400" height="260" />
 
-<img src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/screenshot.jpg" data-canonical-src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/screenshot.jpg" width="450" height="310" hspace = "20"/>
+<img src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/screenshot.jpg" data-canonical-src="https://github.com/meirbnb/LightBending_Sim/blob/main/img/screenshot.jpg" width="400" height="260" hspace = "20"/>
 
 This project is a simple light bending simulator created for educational purposes. It refers to the physics chapter called optics in physics, to be more consice, the bending of light, effect of refraction and reflection. Refraction is the bending of light (it also happens with sound, water and other waves) as it passes from one transparent substance into another. 
 
