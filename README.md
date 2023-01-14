@@ -1,10 +1,6 @@
 # LightBending_Sim
 Physics Light Bending Simulator
 
-
-[Watch demo](https://youtu.be/-NS4gTKRUIo)
-
-
 [Check demo](https://meirbnb.github.io/LightBending_Sim/)
 
 <p>
